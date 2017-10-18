@@ -1,0 +1,11 @@
+{
+  "posts": [
+      {
+          "id": 1,
+          "title": "Test JSON Server",
+          "author": "pkorawit",
+          "create_date" : "2/10/2560",
+          "avartar" : "https://assets-cdn.github.com/images/modules/open_graph/github-mark.png"
+      }
+  ]
+}
