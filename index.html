@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-    <script src="app.js"></script>
-    <title>My Learn AngularJs 5</title>
-    <style type="text/css">
- 
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REST Client Demo</title>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <script src="index.js"></script>
+    <script src="bg.css"></script>
+    
+    <script id="template" type="x-tmpl-mustache">
+        <h3>{{title}}</h3>
+        <h4>{{author}}</h4>
+        <img src="{{avartar}}" alt="">
+    </script>
 </head>
-<body ng-controller="appController">
- 
-    <br>
-    <div class="container">
-     
-    <table class="table table-stroped">
-        <tr class="active">
-            <th>#</th>
-            <th>Topic</th>
-            <th>Date</th>
-            <th>View</th>
-        </tr>
-        <tr ng-class-even="'warning'"  ng-repeat="article in articles">
-            <td>{{$index+1}}</td>
-            <td>{{article.topic}}</td>
-            <td>{{article.date}}</td>
-            <td>{{article.view}}</td>
-        </tr>
-    </table>
- 
+<body>
+        <center><div class="container" id="body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card" style="max-width: 30rem;">
+                            <img class="card-img-top" src="https://media1.giphy.com/media/atZII8NmbPGw0/giphy.gif" alt="Card image cap" >
+                            <audio controls autoplay>
+                                <source src="music.mp3" type="audio/ogg">
+                                <source src="music.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                              </audio>
+                            <div class="card-body">
+                                <h4 class="card-title">Shared Story : )</h4>
+                               
+                                <div class="input-group">
+                                    <span class="input-group-btn">  </span>
+        
+                                    <input type="text" class="form-control" placeholder="มีอะไรเกิดขึ้นบ้าง?" aria-label="Search Location" id="city">
+        
+                                    <!-- <span class="input-group-btn">
+                                                <button class="btn btn-primary" type="button" id="getdata">ทวีต</button> 
+                                                <div id="posts"></div>
+                                                
+                                          </span> -->
+        
+         <button id="getdata">ทวีต</button>
+            <div id="posts"></div>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        
+        
+                    </div></center>
+        
+    <!--<button id="getdata">ทวีต</button>
+    <div id="posts"> -->
+
     </div>
- 
- 
+
+    
 </body>
 </html>

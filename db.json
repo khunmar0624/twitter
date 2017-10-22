@@ -1,11 +1,25 @@
 {
   "posts": [
-      {
-          "id": 1,
-          "title": "Test JSON Server",
-          "author": "pkorawit",
-          "create_date" : "2/10/2560",
-          "avartar" : "https://assets-cdn.github.com/images/modules/open_graph/github-mark.png"
-      }
+    {
+      "id": 2,
+      "title": "madee",
+      "author": "marhvk",
+      "create_date": "5555",
+      "avartar": ""
+    },
+    {
+      "id": 3,
+      "title": "madee",
+      "author": "",
+      "create_date": "",
+      "avartar": ""
+    },
+    {
+      "id": 4,
+      "title": "test",
+      "author": "555",
+      "create_date": "aaaa",
+      "avartar": ""
+    }
   ]
 }
