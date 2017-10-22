@@ -1,3 +1,9 @@
-getdata{
-    background-color:red;
+body{
+    background-color: white;
+    background-size: 1080px 600px;
+
+}
+h4{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 30px;
 }
