@@ -13,7 +13,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Sriracha" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
     <script src="index.js"></script>
     <link rel="stylesheet" href="bg.css">
     <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
@@ -24,8 +28,17 @@
         <img src="{{avartar}}" alt="">
     </script> 
 </head>
-<body>
-        <div class="container" id="body">
+<body class="w3-container">
+
+
+
+
+   
+      <!-- --------------------------- -->
+
+
+      <!-- --------------------------- -->
+       <div class="container" id="body">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card" style="max-width: 30rem;">
@@ -33,7 +46,6 @@
                             <audio controls autoplay>
                                 <source src="music.mp3" type="audio/ogg">
                                 <source src="music.mp3" type="audio/mp3">
-                                Your browser does not support the audio element.
                               </audio>
                             <div class="card-body">
                                 <h4 class="card-title">Shared Stories : )</h4>
@@ -49,12 +61,12 @@
                                                 
                                           </span> -->
         
-         <button id="getdata">All story</button>
+        <button id="getdata">All story</button>
          <button id="twit">Twit</button>
          <button id="clear">Clear</button>
          
             <!-- <div id="posts"></div> -->
-                                </div>
+                           </div>
                             </div>
                         </div>
         
@@ -66,8 +78,10 @@
     <!--<button id="getdata">ทวีต</button>
     <div id="posts"> -->
 
-    </div>
-
+   </div>
+    <TABLE border=2 width=100% height=50%>
+        <tr>
+      <td>
     <div class="container">
         <h2>แบ่งปันความสุข</h2>
                                                                                            
@@ -75,8 +89,8 @@
         <table class="table">
           <thead>
             <tr>
-              <!-- <th>#</th> -->
-              <th>Story</th>
+              <!-- <th>#</th> 
+              <th>Story</th>-->
               
               
              
@@ -85,15 +99,23 @@
           <tbody>
             <tr>
               <!-- <td>1</td> -->
-              <td><div id="posts"></div></td>
-              
+              <!--<td><div id="posts"></div></td> -->
+              <div class="w3-container w3-white">
+                  <p>
+                  <ul class="w3-ul w3-card-4" style="width:50%">
+                    <li><div id="posts"></div></li>
+                    
+                  </ul>
+                  </p>
+                </div>
             </tr>
           </tbody>
         </table>
         </div>
       </div>
-      
-
+    </td>
+    </tr>
+  </table>
     
 </body>
 </html>
