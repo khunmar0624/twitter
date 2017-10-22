@@ -1,24 +1,10 @@
 {
   "posts": [
     {
-      "id": 2,
-      "title": "madee",
-      "author": "marhvk",
-      "create_date": "5555",
-      "avartar": ""
-    },
-    {
-      "id": 3,
-      "title": "madee",
+      "id": null,
+      "title": "ทำไม่ถูกว้อยยยยยย",
       "author": "",
       "create_date": "",
-      "avartar": ""
-    },
-    {
-      "id": 4,
-      "title": "test",
-      "author": "555",
-      "create_date": "aaaa",
       "avartar": ""
     }
   ]
