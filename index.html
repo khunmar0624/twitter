@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>REST Client Demo</title>
+    <title>แบ่งปันเรื่องราว</title>
     
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     <script src="index.js"></script>
     <link rel="stylesheet" href="bg.css">
     <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
-    <script id="template" type="x-tmpl-mustache">
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Sriracha" rel="stylesheet">
+     <script id="template" type="x-tmpl-mustache">
         <h3>{{title}}</h3>
         <h4>{{author}}</h4>
         <img src="{{avartar}}" alt="">
-    </script>
+    </script> 
 </head>
 <body>
         <center><div class="container" id="body">
@@ -47,7 +50,7 @@
         
          <button id="getdata">ทวีต</button>
  
-            <div id="posts"></div>
+            <!-- <div id="posts"></div> -->
                                 </div>
                             </div>
                         </div>
@@ -62,7 +65,32 @@
 
     </div>
 
-    
+    <div class="container">
+        <h2>แบ่งปันความสุข</h2>
+                                                                                           
+        <div class="table-responsive">          
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Story</th>
+              <th>Edit</th>
+              <th>Delete</th>
+              
+             
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><div id="posts"></div></td>
+              
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+      
 
     
 </body>
