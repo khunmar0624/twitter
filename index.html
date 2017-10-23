@@ -15,38 +15,42 @@
     <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Sriracha" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 
 
     <script src="index.js"></script>
     <link rel="stylesheet" href="bg.css">
     <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Sriracha" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Sriracha" rel="stylesheet"> 
+    
+    <!-- <button id="edit" onclick='deletepost({{id}})'>Delete {{id}}</button>
+        <button id="edits" onclick='editpost({{id}})'>Edit {{id}}</button> -->
      <script id="template" type="x-tmpl-mustache">
-        <h3>{{title}}</h3>
+       <div id="post{{id}}">
+          <input type="text" id="title{{id}}"  value="{{title}}" readonly>
         <h4>{{author}}</h4>
         <img src="{{avartar}}" alt="">
+       
+
+        <button id="edit" onclick='deletepost({{id}})'>Delete</button>
+        <button id="edits" onclick='editpost({{id}})'>Edit</button>
+        <button id="save" onclick='savepost({{id}})'>Save</button>
+        
+       </div>
+        
     </script> 
 </head>
 <body class="w3-container">
-
-
-
-
-   
-      <!-- --------------------------- -->
-
-
-      <!-- --------------------------- -->
+        
        <div class="container" id="body">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card" style="max-width: 30rem;">
                             <img class="card-img-top" src="https://media1.giphy.com/media/atZII8NmbPGw0/giphy.gif" alt="Card image cap" >
-                            <audio controls autoplay>
+                            <!--<audio controls autoplay>
                                 <source src="music.mp3" type="audio/ogg">
                                 <source src="music.mp3" type="audio/mp3">
-                              </audio>
+                              </audio> -->
                             <div class="card-body">
                                 <h4 class="card-title">Shared Stories : )</h4>
                                
@@ -100,10 +104,27 @@
             <tr>
               <!-- <td>1</td> -->
               <!--<td><div id="posts"></div></td> -->
-              <div class="w3-container w3-white">
+      <!-- --------------------------- -->
+
+         <!--     <ul>
+                <li>
+                  <input type="radio" id="f-option" name="selector">
+                  <label for="f-option">อยากให้เลือกได้โว้ย</label> -->
+      <!-- --------------------------- -->
+
+
+             <!-- <div class="w3-container w3-white"> -->
                   <p>
-                  <ul class="w3-ul w3-card-4" style="width:50%">
+                 <ul class="w3-ul w3-card-4" style="width:50%">
                     <li><div id="posts"></div></li>
+                    <!-- <input type="text" id="posts"> -->
+                    
+
+
+                   <!-- <button onclick="myFunction()">Try it</button> -->
+                   
+                     
+                                       
                     
                   </ul>
                   </p>
