@@ -26,15 +26,16 @@
     <!-- <button id="edit" onclick='deletepost({{id}})'>Delete {{id}}</button>
         <button id="edits" onclick='editpost({{id}})'>Edit {{id}}</button> -->
      <script id="template" type="x-tmpl-mustache">
-       <div id="post{{id}}">
-          <input type="text" id="title{{id}}"  value="{{title}}" readonly>
+       <div  style="border: 3px dashed #f08080;background-color:#FFFFE0" id="post{{id}}">
+        <input type="text" id="title{{id}}"  value="{{title}}" readonly>
         <h4>{{author}}</h4>
         <img src="{{avartar}}" alt="">
        
-
-        <button id="edit" onclick='deletepost({{id}})'>Delete</button>
+        <button id="edit" onclick='deletepost({{id}})' >Delete</button>
         <button id="edits" onclick='editpost({{id}})'>Edit</button>
-        <button id="save" onclick='savepost({{id}})'>Save</button>
+        <button id="save" onclick='savepost({{id}})'>Save</button><br>
+        <img src="http://dl5.glitter-graphics.net/pub/730/730755ray08rxlgf.gif" alt="">
+        
         
        </div>
         
@@ -47,10 +48,10 @@
                     <div class="col-sm-6">
                         <div class="card" style="max-width: 30rem;">
                             <img class="card-img-top" src="https://media1.giphy.com/media/atZII8NmbPGw0/giphy.gif" alt="Card image cap" >
-                            <!--<audio controls autoplay>
+                            <audio controls autoplay>
                                 <source src="music.mp3" type="audio/ogg">
                                 <source src="music.mp3" type="audio/mp3">
-                              </audio> -->
+                              </audio> 
                             <div class="card-body">
                                 <h4 class="card-title">Shared Stories : )</h4>
                                
@@ -65,7 +66,7 @@
                                                 
                                           </span> -->
         
-        <button id="getdata">All story</button>
+        <button id="getdata" >All story</button>
          <button id="twit">Twit</button>
          <button id="clear">Clear</button>
          
@@ -83,7 +84,7 @@
     <div id="posts"> -->
 
    </div>
-    <TABLE border=2 width=100% height=50%>
+    <TABLE>
         <tr>
       <td>
     <div class="container">
@@ -116,7 +117,7 @@
              <!-- <div class="w3-container w3-white"> -->
                   <p>
                  <ul class="w3-ul w3-card-4" style="width:50%">
-                    <li><div id="posts"></div></li>
+                    <li><div id="posts" name="posts"></div></li>
                     <!-- <input type="text" id="posts"> -->
                     
 
