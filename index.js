@@ -139,33 +139,93 @@ function deletepost(id) {
 
 
 function editpost(id) {
-    alert('Edit ' + id);
+    console.log(id);
+    //alert('Edit ' + id);
+    var url = "http://localhost:3000/posts";
+    
     $("#title" + id).prop('readonly', false);
     $.ajax({
         type: 'PUT',
         //data: {name: 'Billy Bob', age: 28},
-        url: "http://localhost:3000/posts/",
+        url: url +"/"+ id,
         success: function () {
             //no data...just a success (200) status code
-            console.log('Friend Updated Successfully!');
+            console.log(id);
         }
     });
 }
 
-function savepost(id) {
-    alert('Save' + id);
-    $("#title" + id).prop('readonly', false);
+function savepost(id,title) {
+   // console.log(id,title);
+    var title = title;
+    //var title = title;
+
+    //console.log(text);
+    var newposts = {};
+    
+    newposts.id = id;
+    newposts.title = $("#title" + id).val();
+    //newposts.title = text;
+    
+    //console.log(newposts);
+   // console.log(newposts.title);
+    //$("#title" + id).prop('readonly', true);
+    // console.log(newposts);
+    var url = "http://localhost:3000/posts/"+id;
+    // $("#title" + id).prop("");
+    $.ajax({
+        type: 'PUT',
+        data: newposts,
+        url: url,
+        success: function () {
+            //no data...just a success (200) status code
+            console.log(newposts);
+        }
+    });
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+$("#save").click(function() {
+    var newposts = {};
+    newposts.id = null;
+    newposts.title = $("#text").val();
+    var url = "http://localhost:3000/posts"+ data.id;
     $.ajax({
         url: updateUrl,
         type: 'PUT',
         data: newuser,
-        success: function (result) {
+        success: function(result) {
             console.log('Updated!');
         }
     });
-}
 
-
+*/
 $(function () {
 
 
@@ -193,7 +253,6 @@ $(function () {
         $.post(url, newposts, function (data, status) {
             console.log("Inserted " + data);
             $("#text").val("");
-
         });
 
         // var template = $('#template').html();
