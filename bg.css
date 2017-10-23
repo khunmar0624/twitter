@@ -18,3 +18,94 @@ h2{
     font-size: 20px;
 
 }
+#edit{
+    font-size: 10px;
+    
+}
+#edits{
+    font-size: 10px;
+    
+}
+#save{
+    font-size: 10px;
+    
+}
+#getdata{
+    background:#2daebf;
+    
+    font-family:Tahoma, Geneva, sans-serif;
+    
+    font-size:14px;  
+    
+    padding: 5px 10px 5px 10px;
+    
+    color: #fff;
+    
+    font-weight: bold;
+    
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    
+    cursor: pointer;
+    
+    border-left:none;
+    
+    border-top:none;
+    
+    margin:10px 0 10px 0;
+    
+    }
+
+    #twit{
+        background:#007883;
+        
+        font-family:Tahoma, Geneva, sans-serif;
+        
+        font-size:14px;  
+        
+        padding: 5px 10px 5px 10px;
+        
+        color: #fff;
+        
+        font-weight: bold;
+        
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+        
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        
+        cursor: pointer;
+        
+        border-left:none;
+        
+        border-top:none;
+        
+        margin:10px 0 10px 0;
+        
+        }
+        #clear{
+            background:#5ABDC4;
+            
+            font-family:Tahoma, Geneva, sans-serif;
+            
+            font-size:14px;  
+            
+            padding: 5px 10px 5px 10px;
+            
+            color: #fff;
+            
+            font-weight: bold;
+            
+            text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+            
+            border-bottom: 1px solid rgba(0,0,0,0.25);
+            
+            cursor: pointer;
+            
+            border-left:none;
+            
+            border-top:none;
+            
+            margin:10px 0 10px 0;
+            
+            }
